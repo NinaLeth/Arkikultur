@@ -36,10 +36,8 @@ nav a:hover{
     background-color: #5d6e8d;
 }
 
-.emner{
-    padding-top: 45px;
-    display: flex;
-    justify-content: space-between;
+#emner{
+    padding-top: 30px;
 }
 
 #logo{
