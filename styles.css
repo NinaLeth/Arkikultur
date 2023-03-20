@@ -12,8 +12,6 @@ header{
     border-color: black;
     
     position: sticky;
-    
-    padding-bottom: 10px;
 }
 
 h1{
@@ -50,9 +48,13 @@ nav{
     justify-content: space-between;
     /** hvordan får jeg emnerne til ikke at ligge sig grimt når skærmen bliver mindre**/
     position: sticky;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /**pludselig blev min nav meget tyk, uden jeg har tilført padding (idk why) - hvad kan være sket?**/
+    
+}
+
+#emner{
+    padding-top: 70px;
+    padding-inline-end: 50px;
 }
 
 nav a{
@@ -67,13 +69,11 @@ nav a:hover{
     background-color: #5d6e8d;
 }
 
-#emner{
-    padding-top: 30px;
-}
-
 #logo{
     background-color: #d2d1d3;
     border-style: hidden;
+    padding-top: 30px;
+    padding-left: 50px;
 }
 
 #abonner{
@@ -107,7 +107,7 @@ img{
 .abc{
     text-align: left;
     padding:50px;
-    padding-top: 100px;
+    padding-top:100px;
 }
 
 .a-å{
