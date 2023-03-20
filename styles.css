@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header{
@@ -15,9 +16,39 @@ header{
     padding-bottom: 10px;
 }
 
+h1{
+    font-family: 'cormorant', serif;
+    font-size: 80px
+}
+
+h2{
+    font-family: 'cormorant, serif';
+    font-weight: lighter;
+    font-size: 50px
+}
+
+h3{
+    font-family: 'rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+h4{font-family: 'rajdhani', sans-serif;}
+
+h5{
+    font-family: 'rajdhani', sans-serif; 
+    color:#908d8b
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
 nav{
     display: flex;
     justify-content: space-between;
+    /** hvordan får jeg emnerne til ikke at ligge sig grimt når skærmen bliver mindre**/
     position: sticky;
     padding-top: 10px;
     padding-left: 20px;
@@ -29,7 +60,7 @@ nav a{
     padding: 10px;
     border-style: solid;
     border-color: black;
-    font-family: 'cormorant', serif;
+    font-family: 'rajdhani', sans-serif;
 }
 
 nav a:hover{
@@ -54,20 +85,94 @@ nav a:hover{
 #abonner:hover {
     background-color: #5d6e8d;
 }
-
-a{
-    text-decoration: none;
-    color: black
+main{
+    text-align: center;
+    padding-top: 100px;
+}
+main .reklame{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+  
+.artikel{
+    text-align: center;
+    /** hvordan får jeg linket ind i center?**/
 }
 
-h3{
+img{
+    padding-bottom: 40px;
+}
+
+.abc{
+    text-align: left;
+    padding:50px;
+    padding-top: 100px;
+}
+
+.a-å{
+    padding-top: 50px;
+}
+
+.a-å ul{
+    list-style: none;
     font-family: 'rajdhani', sans-serif;
-    font-weight: lighter;
+}
+.emnebox{
+    border-style: solid;
+    border-color: black;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    font-family:'rajdhani', sans-serif;
+}
+
+.kort{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-inline-start: 100px;
+    padding-inline-end: 100px;
+}
+
+.kort section{
+    width: 500px;
+    height: 700px;
+    padding: 10px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.kort h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.kort h3{
+    padding-bottom: 20px;
+}
+
+.billede{
+    width: 500px;
+    height: 500px;
+    background-color: #5d6e8d;
+}
+
+.reklame{
+    padding-bottom: 50px;
+    padding-top: 200px;
 }
 
 footer{
     display: flex;
     justify-content: space-between;
+
+    padding-top: 100px;
 
     background-color: #d2d1d3;
     padding: 20px;
@@ -117,11 +222,12 @@ footer{
 input{
     padding:10px;
     width: 180px;
-    height: 15px;
+    height: 43px;
 
-    font-family:'cormorant', serif;
+    font-family:'rajdhani', sans-serif;
 
     border-style: solid;
     border-color: black;
+    /** hvordan får jeg den her til at passe til de andre - jeg har prøvet ALT**/
 }
 
