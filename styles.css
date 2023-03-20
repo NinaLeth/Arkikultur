@@ -36,8 +36,10 @@ nav a:hover{
     background-color: #5d6e8d;
 }
 
-#emner{
+.emner{
     padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #logo{
@@ -58,5 +60,70 @@ nav a:hover{
 a{
     text-decoration: none;
     color: black
+}
+
+h3{
+    font-family: 'rajdhani', sans-serif;
+    font-weight: lighter;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #d2d1d3;
+    padding: 20px;
+    
+    border-color: black;
+    border-top: 1px solid;
+}
+
+#footerstart{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerstart section{
+    padding-right: 40px;
+}
+
+#udgiver{
+    font-family: 'rajdhani', sans-serif;
+    font-size: large;
+    color: #908d8b;
+    padding-bottom: 10px;
+}
+
+.footertext{
+    font-family:'rajdhani', sans-serif;
+    font-size: large;
+}
+
+.footernavn{
+    font-family:'rajdhani', sans-serif;
+    font-weight: bold;
+}
+
+.knap{
+    background-color: #5d6e8d;
+    border-style: solid;
+    border-color: black;
+    font-family: 'rajdhani',sans-serif;
+    padding:5px;
+}
+
+.knap:hover{
+    background-color: white;
+}
+
+input{
+    padding:10px;
+    width: 180px;
+    height: 15px;
+
+    font-family:'cormorant', serif;
+
+    border-style: solid;
+    border-color: black;
 }
 
