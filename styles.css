@@ -35,7 +35,88 @@ h4{font-family: 'rajdhani', sans-serif;}
 
 h5{
     font-family: 'rajdhani', sans-serif; 
-    color:#908d8b
+    color:#d2d1d3;
+    font-weight: lighter;
+}
+
+.artikeltext .billedtekst{
+    font-family: 'rajdhani', sans-serif;
+    color:#d2d1d3;
+    font-weight: lighter;
+    font-size: small;
+
+    text-align: left;
+}
+
+.overskrift{
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-bottom: 50px;
+}
+
+.forfatter{
+    text-align: right;
+    padding-right: 30px;
+}
+
+.artikeltext{
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+.artikeltext p{
+    font-family: 'PT serif';
+    font-size: large;
+    text-align: left;
+}
+
+.læsmereoverskrift{
+    text-align: left;
+    font-family: 'rajdhani', sans-serif;
+    font-size: 50px;
+    font-weight: lighter;
+    padding-top: 100px;
+    padding-left: 80px;
+}
+
+.læsmere{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.læsmere h2{
+    padding-top: 20px;
+}
+
+.bokse{
+    display: flex;
+    justify-content: space-around;
+}
+
+.faktaboks{
+    border-style: solid;
+    border-color: black;
+
+    text-align: left;
+
+    padding:10px;
+    padding-bottom: 20px;
+}
+
+.faktaboks ul{
+    list-style: none;
+    font-family: 'PT serif', serif;
+    font-size: large;
+}
+
+li a{
+    font-weight: bold;
+    color:#a56f69;
+}
+
+li a:hover{
+    text-decoration: underline;
 }
 
 a{
@@ -100,8 +181,16 @@ main .reklame{
     /** hvordan får jeg linket ind i center?**/
 }
 
+.streg{
+    color:#d2d1d3;
+}
+
 img{
     padding-bottom: 40px;
+}
+
+.billedemedtext{
+    padding:0
 }
 
 .abc{
@@ -118,6 +207,11 @@ img{
     list-style: none;
     font-family: 'rajdhani', sans-serif;
 }
+
+.a-å ul:hover{
+    text-decoration: underline;
+}
+
 .emnebox{
     border-style: solid;
     border-color: black;
