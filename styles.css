@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/**nav menu**/
+
 header{
     width: 100%;
     background-color: #d2d1d3;
@@ -13,6 +15,148 @@ header{
     
     position: sticky;
 }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    /** hvordan får jeg emnerne til ikke at ligge sig grimt når skærmen bliver mindre**/
+    position: sticky;
+    /**pludselig blev min nav meget tyk, uden jeg har tilført padding (idk why) - hvad kan være sket?**/
+}
+
+nav a{
+    background-color: #a56f69;
+    
+    padding: 10px;
+    
+    border-style: solid;
+    border-color: black;
+    
+    font-family: 'rajdhani', sans-serif;
+}
+
+nav a:hover{background-color: #5d6e8d;}
+
+#emner{
+    padding-top: 70px;
+    padding-inline-end: 50px;
+}
+
+#logo{
+    background-color: #d2d1d3;
+    border-style: hidden;
+    
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+#abonner{
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+}
+
+#abonner:hover {background-color: #5d6e8d;}
+
+/**site overordnet**/
+
+main{
+    text-align: center;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+main .reklame{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+/** A-Å sider**/
+
+.abc{
+    text-align: left;
+    padding:50px;
+    padding-top:100px;
+}
+
+.a-å{padding-top: 50px;}
+
+.a-å ul{
+    list-style: none;
+    font-family: 'rajdhani', sans-serif;
+}
+
+.a-å ul:hover{text-decoration: underline;}
+
+/**artikler**/
+
+.overskrift{
+    padding-top: 100px;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 50px;
+}
+.artikeltext{
+    display: flex;
+    flex-wrap: wrap;
+    
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.artikel{text-align: center;}
+
+.streg{color:#d2d1d3;}
+
+img{
+    padding-bottom: 40px;
+}
+
+.billedemedtext{padding:0;}
+
+.reklame{
+    padding-bottom: 50px;
+    padding-top: 200px;
+}
+
+/**kort**/
+
+.kort{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-inline-start: 100px;
+    padding-inline-end: 100px;
+}
+
+.kort section{
+    width: 500px;
+    height: 700px;
+    padding: 10px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.kort h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.kort h3{padding-bottom: 20px;}
+
+.læsmere{
+    display: flex;
+    justify-content: space-around;
+    /**vil gerne flexwrappe, men de ligger sig på linje hvis jeg gør ---> hvad er fejlen?**/
+
+    padding: 50px;
+}
+
+/**fonte**/
 
 h1{
     font-family: 'cormorant', serif;
@@ -47,31 +191,9 @@ p a:hover{
     text-decoration: underline;
 }
 
-.artikeltext .billedtekst{
-    font-family: 'rajdhani', sans-serif;
-    color:#d2d1d3;
-    font-weight: lighter;
-    font-size: small;
-
-    text-align: left;
-}
-
-.overskrift{
-    padding-left: 350px;
-    padding-right: 360px;
-    padding-bottom: 50px;
-}
-
-.forfatter{
-    text-align: right;
-    padding-right: 30px;
-}
-
-.artikeltext{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 350px;
-    padding-right: 350px;
+a{
+    text-decoration: none;
+    color: black
 }
 
 .artikeltext p{
@@ -85,6 +207,20 @@ p a:hover{
     text-align: left;
 }
 
+.artikeltext .billedtekst{
+    font-family: 'rajdhani', sans-serif;
+    color:#d2d1d3;
+    font-weight: lighter;
+    font-size: small;
+    text-align: left;
+}
+
+.forfatter{
+    text-align: right;
+    padding-right: 30px;
+}
+
+
 .citat{
     font-style: italic;
     padding-left: 50px;
@@ -92,27 +228,34 @@ p a:hover{
 
 .læsmereoverskrift{
     text-align: left;
+    
     font-family: 'rajdhani', sans-serif;
     font-size: 50px;
     font-weight: lighter;
+    
     padding-top: 100px;
     padding-left: 80px;
 }
 
-.læsmere{
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    padding-inline-end: 80px;
-}
+.læsmere h2{padding-top: 20px;}
 
-.læsmere h2{
-    padding-top: 20px;
-}
+/**bokse og knapper**/
 
 .bokse{
     display: flex;
     justify-content: space-around;
+}
+
+.emnebox{
+    border-style: solid;
+    border-color: black;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    font-family:'rajdhani', sans-serif;
 }
 
 .faktaboks{
@@ -136,162 +279,32 @@ li a{
     color:#a56f69;
 }
 
-li a:hover{
-    text-decoration: underline;
-}
+li a:hover{text-decoration: underline;}
 
-a{
-    text-decoration: none;
-    color: black
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    /** hvordan får jeg emnerne til ikke at ligge sig grimt når skærmen bliver mindre**/
-    position: sticky;
-    /**pludselig blev min nav meget tyk, uden jeg har tilført padding (idk why) - hvad kan være sket?**/
-    
-}
-
-#emner{
-    padding-top: 70px;
-    padding-inline-end: 50px;
-}
-
-nav a{
-    background-color: #a56f69;
-    padding: 10px;
-    border-style: solid;
-    border-color: black;
-    font-family: 'rajdhani', sans-serif;
-}
-
-nav a:hover{
+.knap{
     background-color: #5d6e8d;
-}
-
-#logo{
-    background-color: #d2d1d3;
-    border-style: hidden;
-    padding-top: 30px;
-    padding-left: 50px;
-}
-
-#abonner{
     border-style: solid;
     border-color: black;
+    font-family: 'rajdhani',sans-serif;
+    padding:5px;
+}
+
+.knap:hover{
     background-color: white;
 }
 
-#abonner:hover {
-    background-color: #5d6e8d;
-}
-main{
-    text-align: center;
-    padding-top: 100px;
-}
-main .reklame{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 100px;
-}
-  
-.artikel{
-    text-align: center;
-    /** hvordan får jeg linket ind i center?**/
-}
-
-.streg{
-    color:#d2d1d3;
-}
-
-img{
-    padding-bottom: 40px;
-}
-
-.billedemedtext{
-    padding:0
-}
-
-.abc{
-    text-align: left;
-    padding:50px;
-    padding-top:100px;
-}
-
-.a-å{
-    padding-top: 50px;
-}
-
-.a-å ul{
-    list-style: none;
-    font-family: 'rajdhani', sans-serif;
-}
-
-.a-å ul:hover{
-    text-decoration: underline;
-}
-
-.emnebox{
-    border-style: solid;
-    border-color: black;
-
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
-    
-    font-family:'rajdhani', sans-serif;
-}
-
-.kort{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    padding-inline-start: 100px;
-    padding-inline-end: 100px;
-}
-
-.kort section{
-    width: 500px;
-    height: 700px;
-    padding: 10px;
-    padding-top: 100px;
-    text-align: center;
-}
-
-.kort h2{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.kort h3{
-    padding-bottom: 20px;
-}
-
-.billede{
-    width: 500px;
-    height: 500px;
-    background-color: #5d6e8d;
-}
-
-.reklame{
-    padding-bottom: 50px;
-    padding-top: 200px;
-}
+/**footer**/
 
 footer{
     display: flex;
     justify-content: space-between;
 
-    padding-top: 100px;
-
     background-color: #d2d1d3;
     padding: 20px;
-    
+    padding-top: 50px;
+
+    /**skal jeg lave en position?**/
+
     border-color: black;
     border-top: 1px solid;
 }
@@ -320,29 +333,5 @@ footer{
 .footernavn{
     font-family:'rajdhani', sans-serif;
     font-weight: bold;
-}
-
-.knap{
-    background-color: #5d6e8d;
-    border-style: solid;
-    border-color: black;
-    font-family: 'rajdhani',sans-serif;
-    padding:5px;
-}
-
-.knap:hover{
-    background-color: white;
-}
-
-input{
-    padding:10px;
-    width: 180px;
-    height: 43px;
-
-    font-family:'rajdhani', sans-serif;
-
-    border-style: solid;
-    border-color: black;
-    /** hvordan får jeg den her til at passe til de andre - jeg har prøvet ALT**/
 }
 
