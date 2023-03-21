@@ -39,6 +39,14 @@ h5{
     font-weight: lighter;
 }
 
+p a{
+    font-weight: bold;
+}
+
+p a:hover{
+    text-decoration: underline;
+}
+
 .artikeltext .billedtekst{
     font-family: 'rajdhani', sans-serif;
     color:#d2d1d3;
@@ -50,7 +58,7 @@ h5{
 
 .overskrift{
     padding-left: 350px;
-    padding-right: 350px;
+    padding-right: 360px;
     padding-bottom: 50px;
 }
 
@@ -60,6 +68,8 @@ h5{
 }
 
 .artikeltext{
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 350px;
     padding-right: 350px;
 }
@@ -68,6 +78,16 @@ h5{
     font-family: 'PT serif';
     font-size: large;
     text-align: left;
+}
+
+.artikeltext h4{
+    font-size: large;
+    text-align: left;
+}
+
+.citat{
+    font-style: italic;
+    padding-left: 50px;
 }
 
 .læsmereoverskrift{
@@ -83,6 +103,7 @@ h5{
     display: flex;
     justify-content: space-around;
     padding: 50px;
+    padding-inline-end: 80px;
 }
 
 .læsmere h2{
