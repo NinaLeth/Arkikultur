@@ -121,6 +121,15 @@ img{
     padding-top: 200px;
 }
 
+.artikeltext .facebook{
+    display: flex;
+    justify-content: space-around;
+}
+
+.facebook{
+    padding-top: 100px;
+}
+
 /**kort**/
 
 .kort{
