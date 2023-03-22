@@ -135,9 +135,7 @@ main .reklame{
     flex-wrap: wrap;
 
     margin-top: 50px;
-    padding-bottom: 100px;
-    padding-inline-start: 100px;
-    padding-inline-end: 100px;
+    margin-bottom: 100px;
 }
 
 .kort section{
@@ -161,9 +159,14 @@ main .reklame{
 .læsmere{
     display: flex;
     justify-content: space-around;
-    /**vil gerne flexwrappe, men de ligger sig på linje hvis jeg gør ---> hvad er fejlen?**/
+    flex-wrap: wrap;
 
     padding: 50px;
+}
+
+.læsmere section{
+    width: 400px;
+
 }
 
 .læsmere img{
