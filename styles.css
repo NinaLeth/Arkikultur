@@ -92,16 +92,27 @@ main .reklame{
 /**artikler**/
 
 .overskrift{
-    padding-left: 25%;
-    padding-right: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
     padding-bottom: 50px;
+
+    text-align: center;
 }
 .artikeltext{
     display: flex;
     flex-wrap: wrap;
     
-    padding-left: 25%;
-    padding-right: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#artikeltext{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    margin-left: 24%;
+    margin-right: 25%;
 }
 
 .artikel{text-align: center;}
@@ -109,8 +120,7 @@ main .reklame{
 .streg{color:#d2d1d3;}
 
 .billedemedtext{
-    padding:0;
-    padding-bottom: 40px
+    padding-bottom: 0px
 }
 
 .reklame{
@@ -177,13 +187,14 @@ main .reklame{
 
 h1{
     font-family: 'cormorant', serif;
-    font-size: 80px
+    font-size: 80px;
+    text-shadow: .1em .1em #d2d1d3
 }
 
 h2{
     font-family: 'cormorant, serif';
     font-weight: lighter;
-    font-size: 50px
+    font-size: 50px;
 }
 
 h3{
@@ -221,7 +232,6 @@ a{
 
 .artikeltext h4{
     font-size: larger;
-    text-align: left;
 }
 
 .artikeltext .billedtekst{
@@ -235,7 +245,6 @@ a{
 .forfatter{
     text-align: right;
 }
-
 
 .citat{
     font-style: italic;
@@ -253,7 +262,7 @@ a{
     padding-left: 80px;
 }
 
-.læsmere h2{padding-top: 20px;}
+.læsmere h2{padding-top: 40px;}
 
 /**bokse og knapper**/
 
@@ -288,6 +297,20 @@ a{
     list-style: none;
     font-family: 'PT serif', serif;
 }
+
+#boks{
+    text-align: left;
+
+    padding-bottom:20px;
+
+    width:300px;
+}
+
+#boks ul{
+    list-style: none;
+    font-family: 'PT serif', serif;
+}
+
 
 li a{
     font-weight: bold;
